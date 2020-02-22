@@ -1,9 +1,9 @@
 # Unsupervised ML with Keras pre-trained models and t-SNE
 This project allows images to be automatically grouped into like clusters using a combination of machine learning techniques.
 
-Unsupervised machine learning is a technique that can used to automatically classify or group data together that has no preidentified structure (as opposed to supervised learning where an "expert" has labeled a training data set).
+First, pre-trained deep learning models are used to obtain feature vectors for the images.
 
-There are two steps involved in the process. The first is to use a pre-trained deep learning model to extract a **feature vector** of each image in the collection. Once we have the vector (which is an array of floating point values) it is then be passed into a t-SNE function, which takes all of the arrays and reduces them down to two values: **X** and **Y**. These two values can then be plotted against each other to produce a graph which Zegami can use as a filter.
+Then, k-means is ran on these feature-vectors.
 
 ## extract.py
 Uses one of the [pre-trained deep learning models avaliable in Keras](https://keras.io/applications) to extract a feature vector for all images in a source directory.
@@ -29,4 +29,4 @@ Then it would have the following directory structure:
 The results are saved to a tab separated file postfixed with '_features.
 
 ## cluster.py
-Now, just run cluster.py to get a folder of clusters using k-means, trained on the feature vectors.
+Now, just run cluster.py to get a folder of clusters using k-means, trained on the feature vectors. The cluster amount is the only variable that needs to be specified.
