@@ -29,4 +29,4 @@ Then it would have the following directory structure:
 The results are saved to a tab separated file postfixed with '_features.
 
 ## cluster.py
-Now, just run cluster.py to get a folder of clusters using k-means, trained on the feature vectors. The cluster amount is the only variable that needs to be specified.
+Now, just run cluster.py to get a folder of clusters using k-means, trained on the feature vectors. The cluster amount is the only argument that needs to be specified.
