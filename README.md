@@ -28,5 +28,5 @@ Then it would have the following directory structure:
 
 The results are saved to a tab separated file postfixed with '_features.
 
-## tsne.py
-Takes a comma separated list of values and runs them through a t-SNE function. The result is then saved back to a tab separated file postfixed with '_tsne'.
+## cluster.py
+Now, just run cluster.py to get a folder of clusters using k-means, trained on the feature vectors.
